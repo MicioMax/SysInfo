@@ -39,7 +39,6 @@ CrashHandler::CrashHandler() {
 
 	std::set_new_handler(NewHandler);
 	std::set_terminate(TerminateHandler);
-	std::set_unexpected(UnexpectedHandler);
 
 	signal(SIGABRT, SigabrtHandler);  
 	signal(SIGINT, SigintHandler);     
